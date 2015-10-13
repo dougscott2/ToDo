@@ -12,7 +12,9 @@ public class ToDo {
             if (todo.isDone){
                 checkbox = "[x]";
             }
-            System.out.println(todoNum + ". "+ checkbox + " " + todo.text);
+            String line = String.format("%d. %s %s", todoNum, checkbox, todo.text);//%d for int  %s for strings
+           // System.out.println(todoNum + ". "+ checkbox + " " + todo.text);
+            System.out.println(line);
             todoNum++;              //increases todoNUm by 1
         }
     }
